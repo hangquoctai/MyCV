@@ -1,0 +1,237 @@
+.tree, .content-one .one .skill .html, .content-one .one .skill .css, .content-one .one .skill .javascript, .content-one .one .skill .jquery, .content-one .one .skill .react, .content-one .one .skill .english {
+  margin: 10px 0px;
+  background-color: gray;
+  height: 20px;
+  width: 100%;
+  border-radius: 0% 30% 30% 0%;
+  position: relative;
+}
+
+.intree, .content-one .one .skill .html span, .content-one .one .skill .css span, .content-one .one .skill .javascript span, .content-one .one .skill .jquery span, .content-one .one .skill .react span, .content-one .one .skill .english span {
+  background-color: #009688;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  border-radius: 0% 30% 30% 0%;
+  position: absolute;
+  animation-name: scroll;
+  animation-duration: 4s;
+  -webkit-animation-name: scroll;
+  -webkit-animation-duration: 4s;
+  -moz-animation-name: scroll;
+  -moz-animation-duration: 4s;
+  -o-animation-name: scroll;
+  -o-animation-duration: 4s;
+}
+
+.base, .content-one .one, .content-two .two, .content-three .three, .content-four .four {
+  width: 90%;
+  margin: auto;
+  color: #6e6e6e;
+}
+
+.contents, .content-one, .content-two, .content-three, .content-four {
+  background-color: #fff;
+  border-radius: 10% 0% 10% 0%;
+  overflow: hidden;
+  margin: 20px 10px;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.exper-item, .content-three .three .exper .feb, .content-three .three .exper .mar, .content-three .three .exper .fe, .content-four .four .edu {
+  padding: 20px 0px;
+  border-bottom: 1px solid gray;
+  word-wrap: break-word;
+}
+
+.exper-item p, .content-three .three .exper .feb p, .content-three .three .exper .mar p, .content-three .three .exper .fe p, .content-four .four .edu p {
+  padding: 5px 0px 5px 14px;
+}
+
+.exper-item i, .content-three .three .exper .feb i, .content-three .three .exper .mar i, .content-three .three .exper .fe i, .content-four .four .edu i {
+  color: #009688;
+  padding: 14px 5px 14px 0px;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+.clear, .clear:after, .clear:before {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+body {
+  font-size: sans-serif;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.container {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.c-content {
+  width: 98%;
+  margin: 0 auto;
+}
+
+@media (min-width: 685px) {
+  .content-one {
+    width: 32%;
+    float: left;
+  }
+}
+
+.content-one img {
+  height: auto;
+  width: 100%;
+}
+
+.content-one .one h1 {
+  text-align: center;
+  padding: 7px 0px;
+  text-transform: uppercase;
+}
+
+.content-one .one .info {
+  border-bottom: 1px solid #b2b2bb;
+}
+
+.content-one .one .info i {
+  color: #009688;
+  padding: 14px 2px 14px 0px;
+}
+
+.content-one .one .skill i {
+  color: #009688;
+  padding: 14px 2px 14px 0px;
+}
+
+.content-one .one .skill .html span {
+  width: 75%;
+}
+
+.content-one .one .skill .css span {
+  width: 70%;
+}
+
+.content-one .one .skill .javascript span {
+  width: 60%;
+}
+
+.content-one .one .skill .jquery span {
+  width: 60%;
+}
+
+.content-one .one .skill .react span {
+  width: 40%;
+}
+
+.content-one .one .skill .english {
+  margin-bottom: 50px;
+}
+
+.content-one .one .skill .english span {
+  width: 50%;
+}
+
+@media (min-width: 685px) {
+  .content-two {
+    width: 60%;
+    float: left;
+  }
+}
+
+.content-two .two {
+  text-align: justify;
+}
+
+.content-two .two i {
+  color: #009688;
+  padding: 20px 14px 20px 0px;
+}
+
+.content-two .two p {
+  padding: 5px 0px;
+}
+
+.content-two .two b {
+  color: red;
+}
+
+@media (min-width: 685px) {
+  .content-three {
+    width: 60%;
+    float: left;
+  }
+}
+
+.content-three .three .exper i {
+  color: #009688;
+  padding: 20px 14px 0px 0px;
+}
+
+.content-three .three .exper .fe {
+  border-bottom: none;
+}
+
+.content-three .three .exper .fe span {
+  padding: 5px;
+  background-color: #009688;
+  color: white;
+  border-radius: 20%;
+}
+
+.content-four {
+  width: 100%;
+}
+
+@media (min-width: 685px) {
+  .content-four {
+    width: 30%;
+    float: left;
+  }
+}
+
+.content-four .four i {
+  color: #009688;
+  padding: 20px 14px 20px 0px;
+}
+
+.content-four .four .edu {
+  border-bottom: none;
+}
+
+.footers {
+  width: 100%;
+  background-color: #009688;
+  text-align: center;
+  color: white;
+}
+
+.footers i {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.footers .f-content {
+  padding: 40px;
+}
+
+.footers .f-content a {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,167 @@
+$i: #009688;
+.tree{
+    margin : 10px 0px;
+    background-color: gray;
+    height: 20px;
+    width: 100%;
+    border-radius: 0% 30% 30% 0%;
+    position: relative;
+}
+.intree{
+    background-color:$i;    
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border-radius: 0% 30% 30% 0%;
+    position: absolute;
+    animation-name: scroll;
+    animation-duration: 4s;
+    -webkit-animation-name: scroll;
+    -webkit-animation-duration: 4s;
+    -moz-animation-name: scroll;
+    -moz-animation-duration: 4s;
+    -o-animation-name: scroll;
+    -o-animation-duration: 4s;
+}
+
+.base{
+    width: 90%;
+    margin: auto;
+    color: rgb(110, 110, 110);
+}
+.contents{
+    background-color: #fff;
+    border-radius: 10% 0% 10% 0%;
+    overflow: hidden;
+    margin:20px 10px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.exper-item{
+    padding:20px 0px;
+    border-bottom: 1px solid gray;
+    p{padding: 5px 0px 5px 14px;}
+    i{color:$i;padding: 14px 5px 14px 0px ;}
+    word-wrap: break-word;
+}
+
+// End Set SCSS 
+
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.clear,.clear:after,.clear:before{
+    display: table;
+    content: "";
+    clear: both;
+}
+body{
+    font-size: sans-serif;
+    background-color:#f1f1f1;
+}
+h1{font-size: 30px;}
+.container{
+    margin-top: 16px;
+    width: 100%;
+}
+.c-content{
+    width: 98%;
+    margin: 0 auto;
+}
+
+// End Set Full CSS
+
+.content-one{
+    @extend .contents;
+    @media( min-width : 685px){width: 32%;float: left;}
+    img{height: auto;width: 100%;}
+    .one{
+        @extend .base;
+        h1{
+            text-align: center;
+            padding: 7px 0px;
+            text-transform: uppercase;
+        }
+        .info{
+            i{color: $i;padding: 14px 2px 14px 0px;}
+            border-bottom: 1px solid #b2b2bb;
+        }
+        .skill{
+            i{color: $i;padding: 14px 2px 14px 0px ;}
+            .html       {span{@extend .intree;width: 75%;}@extend .tree;}
+            .css        {span{@extend .intree;width: 70%;}@extend .tree;}
+            .javascript {span{@extend .intree;width: 60%;}@extend .tree;}
+            .jquery     {span{@extend .intree;width: 60%;}@extend .tree;}
+            .react      {span{@extend .intree;width: 40%;}@extend .tree;}
+            .english    {span{@extend .intree;width: 50%;}@extend .tree;margin-bottom: 50px;}
+        }
+    }
+}
+
+// End Content One
+
+.content-two{
+    @extend .contents;
+    @media( min-width : 685px){width: 60%;float: left;}
+    .two{
+        @extend .base;
+        text-align: justify;
+        i{color:$i;padding: 20px 14px 20px 0px;}
+        p{padding: 5px 0px}
+        b{color: red;}
+    }
+}
+
+// End Content Two
+
+.content-three{
+    @extend .contents;
+    @media( min-width : 685px){width: 60%;float: left;}
+    .three{
+        @extend .base;
+        .exper{
+            i{color:$i;padding: 20px 14px 0px 0px;}
+            .feb{@extend .exper-item;}
+            .mar{@extend .exper-item;}
+            .fe{
+                span{padding: 5px;background-color: $i;color: white;border-radius: 20%;}
+                @extend .exper-item;
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+// End Content Three
+
+.content-four{
+    @extend .contents;
+    width: 100%;
+    @media( min-width : 685px){width: 30%;float: left;}
+    .four{
+        @extend .base;
+        i{color: $i;padding: 20px 14px 20px 0px;}
+        .edu{
+            @extend .exper-item;
+            border-bottom: none;
+        }
+    }
+}
+
+// End Content Four
+
+.footers{
+    width: 100%;
+    background-color: $i;
+    text-align: center;
+    color: white;
+    i{padding: 5px;cursor: pointer}
+    .f-content{
+        padding: 40px;
+        a{color: white;}
+    }
+}
